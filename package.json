@@ -1,10 +1,12 @@
 {
   "scripts": {
-    "dev": "vite build --watch",
-    "dev-stylus": "stylus ./src/assets/colors-post/ --out ./src/assets/colors/ --watch",
-    "build": "stylus ./src/assets/colors-post/ --out ./src/assets/colors/ && tsc && vite build",
+    "dev": "pnpm run \"/^watch:.*/\"",
+    "watch:vite": "vite build --watch",
+    "watch:stylus": "stylus ./src/assets/colors/theme.styl ./src/styles/main.styl --watch",
+    "watch:post-css": "postcss ./src/assets/tailwind-css.css -o ./src/styles/tailwind-css.css --watch",
+    "build": "postcss ./src/assets/tailwind-css.css -o ./src/styles/tailwind-css.css && stylus ./src/assets/colors/theme.styl ./src/styles/main.styl && tsc && vite build",
     "lint": "eslint ./src --ext .js,.cjs,.mjs,.ts,.cts,.mts --ignore-path .gitignore",
-    "prettier": "prettier --write \"./src/**/*.{js,ts,css,json,ml,yaml,html}\" \"./templates/**/*.html\""
+    "format": "prettier --write \"./src/**/*.{js,ts,css,json,ml,yaml,html}\" \"./templates/**/*.html\" && stylus-supremacy format src/**/*.styl --options .vscode/settings.json -r"
   },
   "keywords": [
     "halo",
@@ -38,11 +40,16 @@
     "@types/node": "16",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "prettier": "^2.7.1",
     "stylus": "^0.63.0",
+    "stylus-supremacy": "^2.17.5",
+    "tailwindcss": "^3.4.4",
     "typescript": "^4.6.4",
     "unplugin-fonts": "^1.0.3",
     "vite": "^3.1.8",

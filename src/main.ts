@@ -2,6 +2,7 @@ import "unfonts.css";
 import "./assets/colors/theme.css";
 import "./assets/main.js";
 import "./styles/main.css";
+import "./styles/tailwind-css.css";
 import "@purge-icons/generated";
 import "github-syntax-light/lib/github-light.css";
 export * from "./create-toc";
