@@ -4,7 +4,7 @@
     "watch:vite": "vite build --watch",
     "watch:stylus": "stylus ./src/assets/colors/theme.styl ./src/styles/main.styl --out ./tmp/styles/ --watch",
     "watch:post-css": "postcss ./src/assets/tailwind.css -o ./tmp/styles/tailwind.css --watch",
-    "build": "set NODE_ENV=production && postcss ./src/assets/tailwind.css -o ./tmp/styles/tailwind.css && stylus ./src/assets/colors/theme.styl ./src/styles/main.styl --out ./tmp/styles/ && tsc && vite build",
+    "build": "set NODE_ENV=777 && postcss ./src/assets/tailwind.css -o ./tmp/styles/tailwind.css && stylus ./src/assets/colors/theme.styl ./src/styles/main.styl --out ./tmp/styles/ --compress && tsc && vite build",
     "lint": "eslint ./src --ext .js,.cjs,.mjs,.ts,.cts,.mts --ignore-path .gitignore",
     "format": "prettier --write \"./src/**/*.{js,ts,css,json,ml,yaml,html}\" \"./templates/**/*.html\" && stylus-supremacy format src/**/*.styl --options .vscode/settings.json -r"
   },
