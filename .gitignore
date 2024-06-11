@@ -12,6 +12,12 @@ node_modules
 dist-ssr
 *.local
 
+# 样式构建临时文件
+/tmp/styles/
+
+# 临时文件
+/tmp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
