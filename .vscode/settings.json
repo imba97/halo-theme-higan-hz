@@ -19,7 +19,7 @@
   "stylusSupremacy.tabStopChar": "\t",
   "stylusSupremacy.newLineChar": "\n",
   "stylusSupremacy.quoteChar": "\"",
-  "stylusSupremacy.sortProperties": false,
+  "stylusSupremacy.sortProperties": "alphabetical",
   "stylusSupremacy.alwaysUseImport": true,
   "stylusSupremacy.alwaysUseNot": false,
   "stylusSupremacy.alwaysUseAtBlock": false,
