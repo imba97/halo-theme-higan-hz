@@ -42,9 +42,9 @@
   scrollbar-color: #86898c #c3c4c5;
 }
 *::-webkit-scrollbar {
-  /* 垂直滚动条的宽度 */
+/* 垂直滚动条的宽度 */
   width: 8px;
-  /* 水平滚动条的高度 */
+/* 水平滚动条的高度 */
   height: 8px;
 }
 *::-webkit-scrollbar-thumb {
@@ -65,7 +65,7 @@
   font-size: 1rem;
   text-align: center;
   vertical-align: middle;
-  /* color: var(--color-text); */
+/* color: var(--color-text); */
 }
 .iconify-middle {
   font-size: 1.2rem;
@@ -77,9 +77,7 @@
   font-size: 1.8rem;
 }
 :root {
-  --higan-font-family: Menlo, Meslo LG, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
-    "Noto Color Emoji";
+  --higan-font-family: Menlo, Meslo LG, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
 body[data-color-scheme="light"] {
   color-scheme: only light;
@@ -119,21 +117,6 @@ body[data-color-scheme="dark"] {
 }
 .aspect-h-1 {
   --tw-aspect-h: 1;
-}
-.p-4 {
-  padding: 1rem;
-}
-.flex-col {
-  flex-direction: column;
-}
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x))
-    skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur);
-  backdrop-filter: var(--tw-backdrop-blur);
 }
 /* 样式开始 */
 body h1,
@@ -221,8 +204,11 @@ body dl {
   line-height: 1.725;
 }
 body ul ul,
+body ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 body ol ul,
-body ul ol,
 body ol ol {
   margin-top: 0;
   margin-bottom: 0;
@@ -465,12 +451,7 @@ body {
   color: var(--color-accent-1);
 }
 #header #nav ul a:hover {
-  background-image: linear-gradient(
-    transparent,
-    transparent 0.3125rem,
-    var(--color-accent-1) 0.3125rem,
-    var(--color-accent-1)
-  );
+  background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-accent-1) 0.3125rem, var(--color-accent-1));
   background-position: bottom;
   background-size: 100% 0.375rem;
   background-repeat: repeat-x;
@@ -615,12 +596,7 @@ body {
   color: var(--color-accent-1);
 }
 #header-post #nav ul a:hover {
-  background-image: linear-gradient(
-    transparent,
-    transparent 0.3125rem,
-    var(--color-accent-1) 0.3125rem,
-    var(--color-accent-1)
-  );
+  background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-accent-1) 0.3125rem, var(--color-accent-1));
   background-position: bottom;
   background-size: 100% 0.375rem;
   background-repeat: repeat-x;
@@ -800,12 +776,7 @@ body {
   font-size: 1em;
 }
 #footer-post #nav-footer a:hover {
-  background-image: linear-gradient(
-    transparent,
-    transparent 0.3125rem,
-    var(--color-accent-1) 0.3125rem,
-    var(--color-accent-1)
-  );
+  background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-accent-1) 0.3125rem, var(--color-accent-1));
   background-position: bottom;
   background-size: 100% 0.375rem;
   background-repeat: repeat-x;
@@ -911,8 +882,7 @@ body {
 .group:hover .post-card-hover {
   opacity: 1;
   background-color: var(--color-card-hover);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
-    transform;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
   transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(0.95) scaleY(0.95);
   transition-duration: 0.15s;
 }
@@ -1026,7 +996,7 @@ article .content blockquote {
   padding: 0.5em 0.625rem;
   background: inherit;
   color: var(--color-quote);
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
   font-weight: bold;
 }
 article .content blockquote p {
@@ -1050,12 +1020,7 @@ article .content blockquote footer a {
   color: var(--color-meta);
 }
 article .content blockquote footer a:hover {
-  background-image: linear-gradient(
-    transparent,
-    transparent 0.25rem,
-    var(--color-meta-code) 0.25rem,
-    var(--color-meta-code)
-  );
+  background-image: linear-gradient(transparent, transparent 0.25rem, var(--color-meta-code) 0.25rem, var(--color-meta-code));
   color: var(--color-meta-code);
 }
 article .content blockquote footer cite:before {
@@ -1442,8 +1407,8 @@ article .content .caption {
 }
 .moment .post-list li {
   list-style: none /* display: flex;
-  flex-direction: column;
-  flex: 1; */;
+	flex-direction: column;
+	flex: 1; */;
 }
 .moment .post-list .moment-item {
   padding-bottom: 1.5rem;
@@ -1467,7 +1432,7 @@ article .content .caption {
   background-image: linear-gradient(transparent, transparent 0.25rem, var(--color-link) 0.25rem, var(--color-link));
 }
 .moment-content-box {
-  box-shadow: 1px 3px 15px rgba(140, 149, 159, 0.15);
+  box-shadow: 1px 3px 15px rgba(140,149,159,0.15);
   padding: 1rem;
 }
 .moment-body .momemt-content li {
@@ -1486,7 +1451,7 @@ article .content .caption {
 }
 .moment .avatar {
   background-color: var(--color-background);
-  box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15);
+  box-shadow: 0 0 0 1px rgba(27,31,36,0.15);
   display: inline-block;
   flex-shrink: 0;
   line-height: 1;
@@ -1584,12 +1549,6 @@ article .content .caption {
 .color-text {
   color: var(--color-text);
 }
-.flex {
-  display: flex;
-}
-.flex-col {
-  flex-direction: column;
-}
 .items-start {
   align-items: flex-start;
 }
@@ -1606,7 +1565,7 @@ article .content .caption {
     align-items: baseline;
   }
   .md:col-span-3 {
-    grid-column: span 3 / span 3;
+    grid-column: span 3/span 3;
   }
   .md:hidden {
     display: none;
