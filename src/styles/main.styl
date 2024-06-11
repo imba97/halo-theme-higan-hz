@@ -640,11 +640,12 @@ body
 		display: none
 
 @media screen and (max-width: 900px)
-	#header-post #menu-icon
-		display: none
+	#header-post
+		#menu-icon
+			display: none
 
-	#header-post #actions
-		display: none
+		#actions
+			display: none
 
 @media screen and (max-width: 1199px)
 	#header-post #toc
@@ -683,130 +684,132 @@ body
 	width: 100%
 	z-index: 5000000
 
-#footer-post a
-	background: none
-	color: inherit
-	text-decoration: none
+	a
+		background: none
+		color: inherit
+		text-decoration: none
 
-#footer-post a.icon
-	background: none
+	a.icon
+		background: none
 
-#footer-post a.icon:hover
-	color: var(--color-link)
+		&:hover
+			color: var(--color-link)
 
-#footer-post #nav-footer
-	background: var(--color-footer-mobile-2)
-	padding-left: 1rem
-	padding-right: 1rem
-	text-align: center
+	#nav-footer
+		background: var(--color-footer-mobile-2)
+		padding-left: 1rem
+		padding-right: 1rem
+		text-align: center
 
-#footer-post #nav-footer a
-	color: var(--color-accent-1)
-	font-size: 1em
+		a
+			color: var(--color-accent-1)
+			font-size: 1em
 
-#footer-post #nav-footer a:hover
-	background-image: linear-gradient(
-		transparent,
-		transparent 0.3125rem,
-		var(--color-accent-1) 0.3125rem,
-		var(--color-accent-1)
-	)
-	background-position: bottom
-	background-repeat: repeat-x
-	background-size: 100% 0.375rem
+			&:hover
+				background-image: linear-gradient(
+					transparent,
+					transparent 0.3125rem,
+					var(--color-accent-1) 0.3125rem,
+					var(--color-accent-1)
+				)
+				background-position: bottom
+				background-repeat: repeat-x
+				background-size: 100% 0.375rem
 
-#footer-post #nav-footer ul
-	display: table
-	list-style-type: none
-	margin: 0
-	padding: 0
-	width: 100%
+		ul
+			display: table
+			list-style-type: none
+			margin: 0
+			padding: 0
+			width: 100%
 
-#footer-post #nav-footer ul li
-	display: inline-table
-	padding: 0.625rem
-	vertical-align: middle
-	width: 20%
+			li
+				display: inline-table
+				padding: 0.625rem
+				vertical-align: middle
+				width: 20%
 
-#footer-post #actions-footer
-	margin-bottom: 1rem
-	margin-top: 1rem
-	overflow: auto
-	padding-left: 1rem
-	padding-right: 1rem
-	text-align: center
-	white-space: nowrap
-	width: 100%
+	#actions-footer
+		margin-bottom: 1rem
+		margin-top: 1rem
+		overflow: auto
+		padding-left: 1rem
+		padding-right: 1rem
+		text-align: center
+		white-space: nowrap
+		width: 100%
 
-#footer-post #actions-footer a
-	color: var(--color-accent-1)
-	display: inline-block
-	padding-left: 1rem
+		a
+			color: var(--color-accent-1)
+			display: inline-block
+			padding-left: 1rem
 
-#footer-post #share-footer
-	background: var(--color-footer-mobile-2)
-	padding-left: 1rem
-	padding-right: 1rem
-	text-align: center
+	#share-footer
+		background: var(--color-footer-mobile-2)
+		padding-left: 1rem
+		padding-right: 1rem
+		text-align: center
 
-#footer-post #share-footer ul
-	display: table
-	list-style-type: none
-	margin: 0
-	padding: 0
-	width: 100%
+		ul
+			display: table
+			list-style-type: none
+			margin: 0
+			padding: 0
+			width: 100%
 
-#footer-post #share-footer ul li
-	display: inline-table
-	padding: 0.625rem
-	vertical-align: middle
-	width: 20%
+			li
+				display: inline-table
+				padding: 0.625rem
+				vertical-align: middle
+				width: 20%
 
-#footer-post #toc-footer
-	background: var(--color-footer-mobile-2)
-	clear: both
-	padding-bottom: 1rem
-	padding-top: 1rem
-	text-align: left
+	#toc-footer
+		background: var(--color-footer-mobile-2)
+		clear: both
+		padding-bottom: 1rem
+		padding-top: 1rem
+		text-align: left
 
-#footer-post #toc-footer ol
-	list-style-type: none
-	margin: 0
-	padding-left: 1.25rem
+		ol
+			list-style-type: none
+			margin: 0
+			padding-left: 1.25rem
 
-#footer-post #toc-footer ol li
-	line-height: 1.875rem
+			li
+				line-height: 1.875rem
 
-#footer-post #toc-footer a:hover
-	color: var(--color-link)
+		a
+			&:hover
+				color: var(--color-link)
 
-#footer-post #toc-footer .toc-level-1 > .toc-link
-	display: none
+		.toc-level-1
+			> .toc-link
+				display: none
 
-#footer-post #toc-footer .toc-level-2
-	color: var(--color-text)
-	font-size: var(--text-sm)
+		.toc-level-2
+			color: var(--color-text)
+			font-size: var(--text-sm)
 
-#footer-post #toc-footer .toc-level-2:before
-	color: var(--color-accent-1)
-	content: "#"
+			&:before
+				color: var(--color-accent-1)
+				content: "#"
 
-#footer-post #toc-footer .toc-level-3
-	color: #666
-	font-size: 0.7rem
-	line-height: 0.9375rem
+		.toc-level-3
+			color: #666
+			font-size: 0.7rem
+			line-height: 0.9375rem
 
-#footer-post #toc-footer .toc-level-4
-	display: none
+		.toc-level-4
+			display: none
 
-#footer-post #toc-footer .toc-level-5
-	display: none
+		.toc-level-5
+			display: none
 
-#footer-post #toc-footer .toc-level-6
-	display: none
+		.toc-level-6
+			display: none
 
-#footer-post #toc-footer .toc-number
-	display: none
+		.toc-number
+			display: none
 
 @media screen and (min-width: 500px)
 	#footer-post-container
@@ -823,35 +826,36 @@ body
 	margin: 0
 	padding: 0
 
-.post-list .post-item
-	list-style-type: none
-	margin-bottom: 1rem
-	margin-left: 0
+	.post-item
+		list-style-type: none
+		margin-bottom: 1rem
+		margin-left: 0
 
-.post-list .post-item .meta
-	color: var(--color-time)
-	display: block
-	font-size: var(--text)
-	margin-right: 1rem
-	white-space: nowrap
+		.meta
+			color: var(--color-time)
+			display: block
+			font-size: var(--text)
+			margin-right: 1rem
+			white-space: nowrap
 
 @media (min-width: 480px)
-	.post-list .post-item
-		display: flex
-		margin-bottom: 0.3125rem
+	.post-list
+		.post-item
+			display: flex
+			margin-bottom: 0.3125rem
 
-	.post-list .post-item .meta
-		text-align: right
+			.meta
+				text-align: right
 
 .project-list
 	list-style: none
 	padding: 0
 
-.project-list .project-item
-	margin-bottom: 0.3125rem
+	.project-item
+		margin-bottom: 0.3125rem
 
-.project-list .project-item p
-	display: inline
+		p
+			display: inline
 
 .title-upper-case
 	text-transform: uppercase !important
@@ -862,128 +866,134 @@ article
 	flex-direction: column
 	min-height: 100%
 
-article header .posttitle
-	font-size: 1.5em
-	line-height: 1.25
-	margin-bottom: 0
-	margin-top: 0
-	text-transform: none
+	header
+		.posttitle
+			font-size: 1.5em
+			line-height: 1.25
+			margin-bottom: 0
+			margin-top: 0
+			text-transform: none
 
-article header .meta
-	margin-bottom: 1rem
-	margin-top: 0
+		.meta
+			margin-bottom: 1rem
+			margin-top: 0
 
-article header .meta *
-	color: var(--color-accent-3)
-	font-size: var(--text-sm)
+			*
+				color: var(--color-accent-3)
+				font-size: var(--text-sm)
 
-article header .author
-	font-weight: 700
-	letter-spacing: 0.01em
-	text-transform: uppercase
+		.author
+			font-weight: 700
+			letter-spacing: 0.01em
+			text-transform: uppercase
 
-article header .postdate
-	display: inline
+		.postdate
+			display: inline
 
-article .content h2:before
-	color: var(--color-accent-1)
-	content: "#"
-	font-size: 1.2rem
-	font-weight: bold
-	left: -1rem
-	position: absolute
-	top: -0.25rem
+	.content
+		h2
+			&:before
+				color: var(--color-accent-1)
+				content: "#"
+				font-size: 1.2rem
+				font-weight: bold
+				left: -1rem
+				position: absolute
+				top: -0.25rem
 
-article .content img
-article .content video
-	display: block
-	height: auto
-	margin: auto
-	max-width: 100%
+	img
+		video
+			display: block
+			height: auto
+			margin: auto
+			max-width: 100%
 
-a img
-	display: inherit !important
+		.video-container
+			height: 0
+			overflow: hidden
+			padding-top: 56.25%
+			position: relative
 
-a:has(img)
-	background-image: none !important
+		.video-container
+			iframe
+			object
+			embed
+				height: 100%
+				left: 0
+				margin-top: 0
+				position: absolute
+				top: 0
+				width: 100%
 
-article .content .video-container
-	height: 0
-	overflow: hidden
-	padding-top: 56.25%
-	position: relative
+		blockquote
+			background: inherit
+			color: var(--color-quote)
+			font-weight: bold
+			margin: 1rem 0.625rem
+			padding: 0.5em 0.625rem
+			quotes: "\201C" "\201D" "\2018" "\2019"
 
-article .content .video-container iframe
-article .content .video-container object
-article .content .video-container embed
-	height: 100%
-	left: 0
-	margin-top: 0
-	position: absolute
-	top: 0
-	width: 100%
+			p
+				margin: 0
 
-article .content blockquote
-	background: inherit
-	color: var(--color-quote)
-	font-weight: bold
-	margin: 1rem 0.625rem
-	padding: 0.5em 0.625rem
-	quotes: "\201C" "\201D" "\2018" "\2019"
+			&:before
+				color: var(--color-quote)
+				content: "\201C"
+				font-size: 2em
+				line-height: 0.1em
+				margin-right: 0.25em
+				vertical-align: -0.4em
 
-article .content blockquote p
-	margin: 0
+			footer
+				color: var(--color-meta)
+				font-size: var(--text-xs)
+				margin: line-height 0
 
-article .content blockquote:before
-	color: var(--color-quote)
-	content: "\201C"
-	font-size: 2em
-	line-height: 0.1em
-	margin-right: 0.25em
-	vertical-align: -0.4em
+				a
+					background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-meta) 0.3125rem, var(--color-meta))
+					color: var(--color-meta)
 
-article .content blockquote footer
-	color: var(--color-meta)
-	font-size: var(--text-xs)
-	margin: line-height 0
+					&:hover
+						background-image: linear-gradient(
+							transparent,
+							transparent 0.25rem,
+							var(--color-meta-code) 0.25rem,
+							var(--color-meta-code)
+						)
+						color: var(--color-meta-code)
 
-article .content blockquote footer a
-	background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-meta) 0.3125rem, var(--color-meta))
-	color: var(--color-meta)
+				cite
+					&:before
+						content: "—"
+						padding: 0 0.5em
 
-article .content blockquote footer a:hover
-	background-image: linear-gradient(
-		transparent,
-		transparent 0.25rem,
-		var(--color-meta-code) 0.25rem,
-		var(--color-meta-code)
-	)
-	color: var(--color-meta-code)
+		.pullquote
+			margin: 0
+			text-align: left
+			width: 45%
 
-article .content blockquote footer cite:before
-	content: "—"
-	padding: 0 0.5em
+		.pullquote.left
+			margin-left: 0.5em
+			margin-right: 1em
 
-article .content .pullquote
-	margin: 0
-	text-align: left
-	width: 45%
+		.pullquote.right
+			margin-left: 1em
+			margin-right: 0.5em
 
-article .content .pullquote.left
-	margin-left: 0.5em
-	margin-right: 1em
+		.caption
+			color: var(--color-meta)
+			display: block
+			font-size: 0.9em
+			margin-top: 0.5em
+			position: relative
+			text-align: center
 
-article .content .pullquote.right
-	margin-left: 1em
-	margin-right: 0.5em
+a
+	img
+		display: inherit !important
 
-article .content .caption
-	color: var(--color-meta)
-	display: block
-	font-size: 0.9em
-	margin-top: 0.5em
-	position: relative
-	text-align: center
+	&:has(img)
+		background-image: none !important
 
 .divide
 	border-color: var(--color-divide)
@@ -999,14 +1009,15 @@ article .content .caption
 	line-height: 1.25
 	text-transform: none
 
-.article-tag .tag-link
-	background-image: linear-gradient(transparent, transparent 0.625rem, var(--color-link) 0.625rem, var(--color-link))
-	background-position: bottom
-	background-repeat: repeat-x
-	background-size: 100% 0.375rem
+.article-tag
+	.tag-link
+		background-image: linear-gradient(transparent, transparent 0.625rem, var(--color-link) 0.625rem, var(--color-link))
+		background-position: bottom
+		background-repeat: repeat-x
+		background-size: 100% 0.375rem
 
-.article-tag .tag-link:before
-	content: "#"
+		&:before
+			content: "#"
 
 .article-category .category-link
 	background-image: linear-gradient(transparent, transparent 0.625rem, var(--color-link) 0.625rem, var(--color-link))
@@ -1362,94 +1373,97 @@ article .content .caption
 
 /* 友链页面样式结束 */
 /* 日志样式开始 */
-.moment .moment-comment
-	margin-top: 1rem
+.moment
+	.moment-comment
+		margin-top: 1rem
 
-.moment .moment-comment:target
-	display: block
+		&:target
+			display: block
 
-.moment .post-list li
-	list-style: none 	/* display: flex;
-	flex-direction: column;
-	flex: 1; */
+	.post-list
+		li
+			list-style: none 			/* display: flex;
+			flex-direction: column;
+			flex: 1; */
 
-.moment .post-list .moment-item
-	padding-bottom: 1.5rem
+		.moment-item
+			padding-bottom: 1.5rem
 
-.moment .post-list a
-	background: none
-	text-decoration: none
+		a
+			background: none
+			text-decoration: none
 
-.moment .momemt-content
-	word-break: break-word
+		.operation
+			color: var(--color-text)
+			padding-top: 0.5rem
 
-.moment .momemt-content a
-	background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-text) 0.3125rem, var(--color-text))
-	background-position: bottom
-	background-repeat: repeat-x
-	background-size: 100% 0.375rem
-	color: var(--color-text)
-	text-decoration: none
+	.momemt-content
+		word-break: break-word
 
-.moment .momemt-content a:hover
-	background-image: linear-gradient(transparent, transparent 0.25rem, var(--color-link) 0.25rem, var(--color-link))
+		a
+			background-image: linear-gradient(transparent, transparent 0.3125rem, var(--color-text) 0.3125rem, var(--color-text))
+			background-position: bottom
+			background-repeat: repeat-x
+			background-size: 100% 0.375rem
+			color: var(--color-text)
+			text-decoration: none
+
+			&:hover
+				background-image: linear-gradient(transparent, transparent 0.25rem, var(--color-link) 0.25rem, var(--color-link))
+
+	.avatar-user
+		border-radius: 50% !important
+
+	.avatar
+		background-color: var(--color-background)
+		box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15)
+		display: inline-block
+		flex-shrink: 0
+		line-height: 1
+		overflow: hidden
+		vertical-align: middle
+
+	.color-fg-muted
+		color: var(--color-accent-3)
+
+	.moment-header
+		padding-bottom: 0.375rem
+
+	.medium
+		display: grid
+		grid-gap: 0.5rem
+		grid-template-columns: 1fr 1fr 1fr
+
+		img
+			height: 100%
+			max-height: 9rem
+			object-fit: cover
+			width: 100%
+
+	.tag
+		background-color: var(--color-background-code) !important
+		background-image: none !important
+		border-radius: 5px
+		box-shadow: 0px 0px 6px var(--color-footer-mobile-2)
+		color: var(--color-accent-1) !important
+		font-size: var(--text-sm)
+		padding: 0px 6px
+		text-decoration: none
+
+		&::before
+			content: "#"
 
 .moment-content-box
 	box-shadow: 1px 3px 15px rgba(140, 149, 159, 0.15)
 	padding: 1rem
 
-.moment-body .momemt-content li
-	list-style: initial !important
+.moment-body .momemt-content
+	li
+		list-style: initial !important
 
-.moment-body .momemt-content p
-	text-align: left
-	word-wrap: break-word
-
-.moment .post-list .operation
-	color: var(--color-text)
-	padding-top: 0.5rem
-
-.moment .avatar-user
-	border-radius: 50% !important
-
-.moment .avatar
-	background-color: var(--color-background)
-	box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15)
-	display: inline-block
-	flex-shrink: 0
-	line-height: 1
-	overflow: hidden
-	vertical-align: middle
-
-.moment .color-fg-muted
-	color: var(--color-accent-3)
-
-.moment .moment-header
-	padding-bottom: 0.375rem
-
-.moment .medium
-	display: grid
-	grid-gap: 0.5rem
-	grid-template-columns: 1fr 1fr 1fr
-
-.moment .medium img
-	height: 100%
-	max-height: 9rem
-	object-fit: cover
-	width: 100%
-
-.moment .tag
-	background-color: var(--color-background-code) !important
-	background-image: none !important
-	border-radius: 5px
-	box-shadow: 0px 0px 6px var(--color-footer-mobile-2)
-	color: var(--color-accent-1) !important
-	font-size: var(--text-sm)
-	padding: 0px 6px
-	text-decoration: none
-
-.moment .tag::before
-	content: "#"
+	p
+		text-align: left
+		word-wrap: break-word
 
 @media (max-width: 768px)
 	.moment ul
@@ -1511,27 +1525,6 @@ article .content .caption
 
 .color-text
 	color: var(--color-text)
-
-.items-start
-	align-items: flex-start
-
-.space-y-10 > :not([hidden]) ~ :not([hidden])
-	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse))
-	margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)))
-	--tw-space-y-reverse: 0
-
-@media (min-width: 768px)
-	.md:items-baseline
-		align-items: baseline
-
-	.md\:col-span-3
-		grid-column: span 3 / span 3
-
-	.md\:hidden
-		display: none
-
-	.md\:block
-		display: block
 
 /* 作者页面样式结束 */
 .no-underline
