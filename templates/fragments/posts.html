@@ -91,13 +91,10 @@
               </span>
               <th:block th:text="${#temporals.format(post.spec.publishTime, 'MMMM dd yyyy')}"></th:block>
             </time>
-            <p
-              class="p-0 mb-0 relative z-10 mt-2 line-height-normal color-accent-3"
-              th:text="${post.status?.excerpt}"
-            ></p>
+            <p class="p-0 mb-0 relative z-10 mt-2 text-sm color-accent-3" th:text="${post.status?.excerpt}"></p>
             <div
               aria-hidden="true"
-              class="relative z-10 mt-4 flex items-center line-height-normal font-medium color-accent-1"
+              class="relative z-10 mt-4 flex items-center text-sm font-medium color-accent-1"
               th:if="${not #strings.isEmpty(theme.config?.index_styles?.index_post_list_permalink_text)}"
               th:text="${theme.config?.index_styles?.index_post_list_permalink_text}"
             >
@@ -105,7 +102,7 @@
             </div>
           </div>
           <time
-            class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center line-height-normal color-accent-3"
+            class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm color-accent-3"
             th:datetime="${#temporals.format(post.spec.publishTime, 'yyyy-MM-dd')}"
             th:text="${#temporals.format(post.spec.publishTime, 'MMMM dd yyyy')}"
           >
