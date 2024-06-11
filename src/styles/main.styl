@@ -223,13 +223,19 @@ body
 		&:hover
 			background-image: linear-gradient(transparent, transparent 0.25rem, var(--color-link) 0.25rem, var(--color-link))
 
-		h1
-		.h1
-		h2
-		h3
-		h4
-		h5
-		h6
+	a.icon
+		background: none
+
+		&:hover
+			color: var(--color-link)
+
+	h1
+	.h1
+	h2
+	h3
+	h4
+	h5
+		a
 			background: none
 			color: inherit
 			text-decoration: none
@@ -239,12 +245,6 @@ body
 				background-position: bottom
 				background-repeat: repeat-x
 				background-size: 100% 0.375rem
-
-	a.icon
-		background: none
-
-		&:hover
-			color: var(--color-link)
 
 	h6
 		a
@@ -364,6 +364,28 @@ body
 					background-repeat: repeat-x
 					background-size: 100% 0.375rem
 
+			li
+				border-color: var(--color-accent-1)
+				border-right: 1px dotted
+				display: inline-block
+				margin-right: 0.9375rem
+				vertical-align: middle
+
+				&:last-child
+					border-right: 0
+					margin-right: 0
+
+					a
+						margin-right: 0
+
+			.icon
+				display: none
+
+	&:hover
+		#logo
+			filter: none
+			-webkit-filter: none
+
 .avatar-grayscale
 	filter: grayscale(100%)
 	-webkit-filter: grayscale(100%)
@@ -375,60 +397,45 @@ body
 	border-radius: 50% !important
 	box-shadow: 0 0 0 1px var(--color-avatar-border)
 
-#header #nav ul li
-	border-color: var(--color-accent-1)
-	border-right: 1px dotted
-	display: inline-block
-	margin-right: 0.9375rem
-	vertical-align: middle
-
-#header #nav ul .icon
-	display: none
-
-#header #nav ul li:last-child
-	border-right: 0
-	margin-right: 0
-
-#header #nav ul li:last-child a
-	margin-right: 0
-
-#header:hover #logo
-	filter: none
-	-webkit-filter: none
-
 @media screen and (max-width: 480px)
-	#header #title
-		display: table
-		margin-right: 5rem
-		min-height: 3.125rem
+	#header
+		#title
+			display: table
+			margin-right: 5rem
+			min-height: 3.125rem
 
-	#header #title h1
-		display: table-cell
-		vertical-align: middle
+			h1
+				display: table-cell
+				vertical-align: middle
 
-	#header #nav ul a:hover
-		background: none
+		#nav
+			ul
+				a
+					&:hover
+						background: none
 
-	#header #nav ul li
-		border-right: 0
-		display: none
+				li
+					border-right: 0
+					display: none
 
-	#header #nav ul li.icon
-		display: inline-block
-		position: absolute
-		right: 1rem
-		top: 4.8125rem
+				li.icon
+					display: inline-block
+					position: absolute
+					right: 1rem
+					top: 4.8125rem
 
-	#header #nav ul li.icon.iconify
-		color: var(--color-accent-1)
+				li.icon.iconify
+					color: var(--color-accent-1)
 
-	#header #nav ul.responsive li
-		display: block
+			ul.responsive
+				li
+					display: block
 
-	#header #nav li:not(:first-child)
-		font-size: 1rem
-		padding-left: 4.375rem
-		padding-top: 1rem
+			li
+				&:not(:first-child)
+					font-size: 1rem
+					padding-left: 4.375rem
+					padding-top: 1rem
 
 #header-post
 	display: inline-block
@@ -438,125 +445,125 @@ body
 	top: 2rem
 	z-index: 100
 
-#header-post a
-	background: none
-	color: inherit
-	text-decoration: none
+	a
+		background: none
+		color: inherit
+		text-decoration: none
 
-#header-post a.icon
-	background: none
+	a.icon
+		background: none
 
-#header-post a.icon:hover
-	color: var(--color-link)
+		&:hover
+			color: var(--color-link)
 
-#header-post ol
-	list-style-type: none
+	ol
+		list-style-type: none
 
-#header-post ul
-	display: inline-block
-	list-style-type: none
-	margin: 0
-	padding: 0
+	ul
+		display: inline-block
+		list-style-type: none
+		margin: 0
+		padding: 0
 
-#header-post ul li
-	display: inline-block
-	margin-right: 0.9375rem
-	vertical-align: middle
+		li
+			display: inline-block
+			margin-right: 0.9375rem
+			vertical-align: middle
 
-#header-post ul li:last-child
-	margin-right: 0
+			&:last-child
+				margin-right: 0
 
-#header-post #menu-icon
-	float: right
-	margin-left: 0.9375rem
-	margin-right: 2rem
+	#menu-icon
+		float: right
+		margin-left: 0.9375rem
+		margin-right: 2rem
 
-#header-post #menu-icon:hover
-	color: var(--color-accent-1)
+		&:hover
+			color: var(--color-accent-1)
 
-#header-post #menu-icon-tablet
-	float: right
-	margin-left: 0.9375rem
-	margin-right: 2rem
+	#menu-icon-tablet
+		float: right
+		margin-left: 0.9375rem
+		margin-right: 2rem
 
-#header-post #menu-icon-tablet:hover
-	color: var(--color-accent-1)
+		&:hover
+			color: var(--color-accent-1)
 
-#header-post #top-icon-tablet
-	bottom: 2rem
-	margin-left: 0.9375rem
-	margin-right: 2rem
-	position: fixed
-	right: 2rem
+	#top-icon-tablet
+		bottom: 2rem
+		margin-left: 0.9375rem
+		margin-right: 2rem
+		position: fixed
+		right: 2rem
 
-#header-post #top-icon-tablet:hover
-	color: var(--color-accent-1)
+		&:hover
+			color: var(--color-accent-1)
 
-#header-post .active
-	color: var(--color-accent-1)
+	.active
+		color: var(--color-accent-1)
 
-#header-post #menu
-	margin-right: 2rem
-	visibility: hidden
+	#menu
+		margin-right: 2rem
+		visibility: hidden
 
-#header-post #nav
-	color: var(--color-accent-1)
-	font-size: var(--text-sm)
-	font-style: normal
-	letter-spacing: 0.01em
+	#nav
+		color: var(--color-accent-1)
+		font-size: var(--text-sm)
+		font-style: normal
+		letter-spacing: 0.01em
 
-#header-post #nav ul
-	display: inline-table
-	line-height: 0.9375rem
+		ul
+			display: inline-table
+			line-height: 0.9375rem
 
-#header-post #nav ul a
-	color: var(--color-accent-1)
-	margin-right: 0.9375rem
+			a
+				color: var(--color-accent-1)
+				margin-right: 0.9375rem
 
-#header-post #nav ul a:hover
-	background-image: linear-gradient(
-		transparent,
-		transparent 0.3125rem,
-		var(--color-accent-1) 0.3125rem,
-		var(--color-accent-1)
-	)
-	background-position: bottom
-	background-repeat: repeat-x
-	background-size: 100% 0.375rem
+				&:hover
+					background-image: linear-gradient(
+						transparent,
+						transparent 0.3125rem,
+						var(--color-accent-1) 0.3125rem,
+						var(--color-accent-1)
+					)
+					background-position: bottom
+					background-repeat: repeat-x
+					background-size: 100% 0.375rem
 
-#header-post #nav ul li
-	border-right: 1px dotted var(--color-accent-1)
+			li
+				border-right: 1px dotted var(--color-accent-1)
 
-#header-post #nav ul li:last-child
-	border-right: 0
-	margin-right: 0
+				&:last-child
+					border-right: 0
+					margin-right: 0
 
-#header-post #nav ul li:last-child a
-	margin-right: 0
+					a
+						margin-right: 0
 
-#header-post #actions
-	float: right
-	margin-right: 2rem
-	margin-top: 2rem
-	text-align: right
-	width: 100%
+	#actions
+		float: right
+		margin-right: 2rem
+		margin-top: 2rem
+		text-align: right
+		width: 100%
 
-#header-post #actions ul
-	display: block
+		ul
+			display: block
 
-#header-post #actions .info
-	display: block
-	font-style: italic
+		.info
+			display: block
+			font-style: italic
 
-#header-post #share
-	clear: both
-	padding-right: 2rem
-	padding-top: 1rem
-	text-align: right
+	#share
+		clear: both
+		padding-right: 2rem
+		padding-top: 1rem
+		text-align: right
 
-#header-post #share li
-	display: block
-	margin: 0
+		li
+			display: block
+			margin: 0
 
 /* toc collapsible */
 .toc-child:has(.toc-active)
@@ -567,63 +574,66 @@ body
 	display: none
 
 /* collapsible end */
-#header-post #toc
-	clear: both
-	float: right
-	font-size: var(--text)
-	margin-top: 1rem
-	max-height: calc(95vh - 7rem)
-	max-width: 20em
-	overflow: auto
-	padding-right: 2rem
-	text-align: right
+#header-post
+	#toc
+		clear: both
+		float: right
+		font-size: var(--text)
+		margin-top: 1rem
+		max-height: calc(95vh - 7rem)
+		max-width: 20em
+		overflow: auto
+		padding-right: 2rem
+		text-align: right
 
-#header-post #toc .toc-text
-	word-wrap: break-word
+		.toc-text
+			word-wrap: break-word
 
-#header-post #toc a:hover
-	color: var(--color-link)
+		a
+			&:hover
+				color: var(--color-link)
 
-#header-post #toc .toc-level-1 > .toc-link
-	display: none
+		.toc-level-1
+			> .toc-link
+				display: none
 
-#header-post #toc .toc-level-2 > .toc-link-h2
-	font-weight: 500
+		.toc-level-2
+			color: var(--toc-level-2)
+			font-size: var(--text-toc-level-2)
 
-#header-post #toc .toc-level-2
-	color: var(--toc-level-2)
-	font-size: var(--text-toc-level-2)
+			> .toc-link-h2
+				font-weight: 500
 
-#header-post #toc .toc-level-2:before
-	color: var(--color-accent-1)
-	content: "#"
-	padding-right: 0.3125rem
+			&:before
+				color: var(--color-accent-1)
+				content: "#"
+				padding-right: 0.3125rem
 
-#header-post #toc .toc-level-3
-	color: var(--toc-level-3)
-	font-size: var(--text-toc-level-3)
+		.toc-level-3
+			color: var(--toc-level-3)
+			font-size: var(--text-toc-level-3)
 
-#header-post #toc .toc-level-4
-	color: var(--toc-level-4)
-	font-size: var(--text-toc-level-4)
+		.toc-level-4
+			color: var(--toc-level-4)
+			font-size: var(--text-toc-level-4)
 
-#header-post #toc .toc-level-5
-	display: none
+		.toc-level-5
+			display: none
 
-#header-post #toc .toc-level-6
-	display: none
+		.toc-level-6
+			display: none
 
-#header-post #toc .toc-number
-	display: none
+		.toc-number
+			display: none
 
-#header-post .toc-active
-	color: var(--color-accent-1)
+	.toc-active
+		color: var(--color-accent-1)
 
-#header-post .is-active-link::before
-	background-color: var(--color-accent-1)
+	.is-active-link::before
+		background-color: var(--color-accent-1)
 
-#header-post .is-collapsible
-	transition: all 40ms ease-in-out
+	.is-collapsible
+		transition: all 40ms ease-in-out
 
 @media screen and (max-width: 500px)
 	#header-post
@@ -648,18 +658,19 @@ body
 		display: none !important
 
 @media screen and (min-width: 1199px)
-	#header-post #actions
-		width: auto
+	#header-post
+		#actions
+			width: auto
 
-	#header-post #actions ul
-		display: inline-block
-		float: right
+			ul
+				display: inline-block
+				float: right
 
-	#header-post #actions .info
-		display: inline
-		float: left
-		font-style: italic
-		margin-right: 2rem
+			.info
+				display: inline
+				float: left
+				font-style: italic
+				margin-right: 2rem
 
 #footer-post
 	background: var(--color-footer-mobile-3)
@@ -1447,49 +1458,50 @@ article .content .caption
 
 /* 日志样式结束 */
 /* 作者页面样式开始 */
-.author .head-cover
-	background-position: center
-	background-repeat: no-repeat
-	background-size: cover
+.author
+	.head-cover
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
 
-.author .profile-wrap
-	backdrop-filter: blur(1px)
-	color: var(--color-text)
-	margin: 0 auto
-	padding: 1.25rem 0
-	-webkit-backdrop-filter: blur(1px)
+	.profile-wrap
+		backdrop-filter: blur(1px)
+		color: var(--color-text)
+		margin: 0 auto
+		padding: 1.25rem 0
+		-webkit-backdrop-filter: blur(1px)
 
-.author .profile-content
-	margin: 0 auto
-	overflow: hidden
-	text-align: center
+	.profile-content
+		margin: 0 auto
+		overflow: hidden
+		text-align: center
 
-.author .profile-avatar
-	border: 0.1rem solid #eae9e7
-	border-radius: 50%
-	height: 5rem
-	margin: 0 auto
-	width: 5rem
+	.profile-avatar
+		border: 0.1rem solid #eae9e7
+		border-radius: 50%
+		height: 5rem
+		margin: 0 auto
+		width: 5rem
 
-.author .profile-nickname-container
-	font-size: 1rem
-	margin: 0 auto
-	text-align: center
+	.profile-nickname-container
+		font-size: 1rem
+		margin: 0 auto
+		text-align: center
 
-.author .profile-nickname
-	font-weight: 600
-	margin: 0
-	padding: 0px
-	text-align: center
+	.profile-nickname
+		font-weight: 600
+		margin: 0
+		padding: 0px
+		text-align: center
 
-.author .profile-bio
-	color: var(--color-accent-2)
-	font-size: 0.875rem
-	font-weight: normal
-	line-height: 1.25rem
-	margin: 0px
-	padding: 0px
-	text-align: center
+	.profile-bio
+		color: var(--color-accent-2)
+		font-size: 0.875rem
+		font-weight: normal
+		line-height: 1.25rem
+		margin: 0px
+		padding: 0px
+		text-align: center
 
 .color-accent-1
 	color: var(--color-accent-1)
